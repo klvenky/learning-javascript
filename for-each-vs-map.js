@@ -5,23 +5,13 @@ a = a.map(element => {
     console.log(element);
     element = element * 2;
     return element;
+    // return is required because map creates a new array pushing the values returned
 });
 
 b.forEach((element) => {
     element *= 2;
     // return element;
+    // no need to return as the elements get updated automatically
 });
 console.log('a : ', a);
 console.log('b : ', b);
-
-// for (let test of a) {
-//     console.log(' of : ',test);
-// }
-// for (let test in a) {
-//     console.log(' in : ', test);
-// }
-
-// a = { test: 1, test2: 2, test3: 3, test4:  4 };
-// for(let test of a) {
-//     console.log(' of : ',test);
-// }

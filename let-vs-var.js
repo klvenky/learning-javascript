@@ -1,4 +1,4 @@
-let a = function() {
+let letFunc = function() {
     let a = 7, b =[];
     for(var i =0;i<a;i++) {
         b.push(()=>{
@@ -10,7 +10,7 @@ let a = function() {
         });
     }
 };
-let a2 = function () {
+let varFunc = function () {
     let a = 7, b = [];
     for (var i = 0; i < a; i++) {
         b.push(() => {
@@ -24,7 +24,7 @@ let a2 = function () {
     }
 };
 
-let letFunc = a2,varFunc = a;
+// let letFunc = a2,varFunc = a;
 console.log('var one');
 letFunc.print();
 console.log('let one');
