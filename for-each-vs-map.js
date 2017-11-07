@@ -8,6 +8,7 @@ a = a.map(element => {
     // return is required because map creates a new array pushing the values returned
 });
 
+// direct editing variables is possible and is reflected directly
 b.forEach((element) => {
     element *= 2;
     // return element;

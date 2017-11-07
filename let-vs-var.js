@@ -24,7 +24,6 @@ let varFunc = function () {
     }
 };
 
-// let letFunc = a2,varFunc = a;
 console.log('var one');
 letFunc.print();
 console.log('let one');
